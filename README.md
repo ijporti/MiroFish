@@ -37,6 +37,14 @@
 
 ### Our Vision
 
-MiroFish is dedicated to creating a swarm intelligence mirror that maps reality. By capturing the collective emergence triggered by individual interactions, we break through the limitations of traditional prediction:
+MiroFish is dedicated to creating a swarm intelligence mirror that maps reality. By capturing the collective emergence triggered by individual interactions, we break through the limitations of t
 
-- **At the Macro Level**: We are a rehearsal laboratory for decision-makers, allowing policies and public relations to be tested at scale
+---
+
+## 🗒️ Personal Notes
+
+> These are my own observations while exploring the codebase — may be useful for others getting started.
+
+- The agent count in simulation runs can be quite high by default; consider lowering it for local testing to reduce memory usage.
+- I found the seed material upload step easiest to test with short news snippets (~200 words) before trying larger documents.
+- TODO: experiment with different LLM backends to compare prediction quality.
