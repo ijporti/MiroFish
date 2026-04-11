@@ -43,8 +43,8 @@ MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.
 
 ## 🗒️ Personal Notes
 
-> These are my own observations while exploring the codebase — may be useful for others getting started.
+> These are my own notes as I work through the codebase — may be useful for others getting started.
 
-- The agent count in simulation runs can be quite high by default; consider lowering it for local testing to reduce memory usage.
-- I found the seed material upload step easiest to test with short news snippets (~200 words) before trying larger documents.
-- TODO: experiment with different LLM backends to compare prediction quality.
+- **Setup tip**: Make sure to copy `.env.example` to `.env` before running; the app will silently fail without it.
+- **Local dev**: I've been running this with `flask run --debug` instead of the default command — hot-reload makes iteration much faster.
+- **TODO for me**: Dig into the agent memory module (`/core/memory`) to understand how long-term context is persisted between simulation steps.
