@@ -41,10 +41,7 @@ MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.
 
 ---
 
-## 🗒️ Personal Notes
-
-> These are my own notes as I work through the codebase — may be useful for others getting started.
-
-- **Setup tip**: Make sure to copy `.env.example` to `.env` before running; the app will silently fail without it.
-- **Local dev**: I've been running this with `flask run --debug` instead of the default command — hot-reload makes iteration much faster.
-- **TODO for me**: Dig into the agent memory module (`/core/memory`) to understand how long-term context is persisted between simulation steps.
+> **Personal Notes (fork-specific):**
+> - I'm using this fork primarily to experiment with custom agent personality profiles.
+> - Tested against Python 3.11; earlier versions may have issues with some async calls.
+> - TODO: explore reducing the default agent count for faster local iteration on low-resource machines.
