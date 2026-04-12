@@ -17,7 +17,9 @@ pandas>=2.0.0
 
 # Async support
 aiohttp>=3.9.0
-asyncio>=3.4.3
+# Note: asyncio is part of the Python standard library since 3.4,
+# the PyPI package is deprecated and shouldn't be needed here
+# asyncio>=3.4.3
 
 # Logging
 loguru>=0.7.0
