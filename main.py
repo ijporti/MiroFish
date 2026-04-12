@@ -22,7 +22,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler("mirofish.log", encoding="utf-8"),
+        logging.FileHandler("logs/mirofish.log", encoding="utf-8"),  # fixed: log file should go in logs/ dir
     ],
 )
 logger = logging.getLogger("mirofish")
