@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configure logging
-log_level = os.getenv("LOG_LEVEL", "INFO").upper()
+log_level = os.getenv("LOG_LEVEL", "DEBUG").upper()  # changed default from INFO to DEBUG for easier local dev
 logging.basicConfig(
     level=getattr(logging, log_level, logging.INFO),
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
