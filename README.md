@@ -42,5 +42,6 @@ MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.
 ---
 
 > **Personal Notes (fork-specific):**
-> - I'm primarily using this to experiment with financial signal inputs and see how agent behavior changes with different seed data.
+> - I'm primarily using this to experiment with financial signal inputs and see how agent behavior shifts with different seed data.
+> - TODO: Try reducing the default agent count to ~100 for faster local iteration before scaling up.
 > - Upstream repo: [666ghj/MiroFish](https://github.com/666ghj/MiroFish) — sync periodically with `git fetch upstream`.
