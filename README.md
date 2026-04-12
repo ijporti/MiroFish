@@ -42,6 +42,5 @@ MiroFish is dedicated to creating a swarm intelligence mirror that maps reality.
 ---
 
 > **Personal Notes (fork-specific):**
-> - I'm using this fork primarily to experiment with custom agent personality profiles.
-> - Tested against Python 3.11; earlier versions may have issues with some async calls.
-> - TODO: explore reducing the default agent count for faster local iteration on low-resource machines.
+> - I'm primarily using this to experiment with financial signal inputs and see how agent behavior changes with different seed data.
+> - Upstream repo: [666ghj/MiroFish](https://github.com/666ghj/MiroFish) — sync periodically with `git fetch upstream`.
