@@ -27,8 +27,8 @@ RUN npm ci \
 COPY . .
 
 # Add a healthcheck so Docker can report container status
-# Increased start-period to 120s (was 90s) - my machine is pretty slow so giving extra boot time
-HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
+# Increased start-period to 180s - my laptop is quite slow and 120s wasn't always enough
+HEALTHCHECK --interval=30s --timeout=10s --start-period=180s --retries=3 \
   CMD curl -f http://localhost:5001/health || exit 1
 
 EXPOSE 3000 5001
