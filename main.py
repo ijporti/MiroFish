@@ -75,7 +75,10 @@ if __name__ == "__main__":
     # Ensure logs directory exists
     Path("logs").mkdir(exist_ok=True)
 
+    # Note: asyncio.run() creates a new event loop each time; on Windows this
+    # can sometimes cause issues with certain async libs -- keep an eye on it.
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
+        # Suppress the traceback on Ctrl+C so the terminal output stays clean
         logger.info("Application terminated by user.")
