@@ -37,3 +37,4 @@ python-dateutil>=2.8.2
 
 # Dev/debugging tools (personal addition)
 ipython>=8.0.0
+rich>=13.0.0  # nicer tracebacks and pretty-printing in the terminal
