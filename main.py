@@ -77,6 +77,11 @@ if __name__ == "__main__":
 
     # Note: asyncio.run() creates a new event loop each time; on Windows this
     # can sometimes cause issues with certain async libs -- keep an eye on it.
+    # On Windows, the default ProactorEventLoop can cause issues; switching to
+    # SelectorEventLoop fixes compatibility problems with some async libraries.
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
