@@ -38,3 +38,5 @@ python-dateutil>=2.8.2
 # Dev/debugging tools (personal addition)
 ipython>=8.0.0
 rich>=13.0.0  # nicer tracebacks and pretty-printing in the terminal
+pytest>=7.4.0  # for running tests locally while learning the codebase
+pytest-asyncio>=0.23.0  # needed for testing async code in this project
